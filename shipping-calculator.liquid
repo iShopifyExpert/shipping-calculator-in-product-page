@@ -1,0 +1,23 @@
+<div class="Container">
+  <div class="PageContent">
+      <div class="Section Section--spacingExtraLarge">
+            <div class="Panel">
+              <h2 class="Panel__Title Heading u-h2">{{ 'cart.shipping_estimator.title' | t }}</h2>
+
+              <div class="Panel__Content">
+                <div class="ShippingEstimator">
+                  <div class="ShippingEstimator__Form">
+                    <select name="shipping_address[country]" id="productcountry" class="Form__Select Select">
+                      <option value="">Choose Country</option>
+                      {{ all_country_option_tags }}
+                    </select>
+                    <select name="shipping_address[province]" id="productprovince" class="Form__Select Select" style="display: none;">
+                    </select>
+                  </div>
+                  <div class="ShippingEstimator__Result"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
